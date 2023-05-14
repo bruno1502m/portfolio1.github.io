@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    .topnav a {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  height: 70px;
+  text-decoration: none;
+}
+
+.topnav a {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  height: 70px;
+  text-decoration: none;
+}
+
+.topnav a img {
+  margin-right: 5px;
+}
+
+.icon-image {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
+
+.folder-projects .icon-image {
+  background-image: url('folder.png');
+}
+
+.folder-aboutme .icon-image {
+  background-image: url('aboutme.png');
+}
+
+.folder-gallery .icon-image {
+  background-image: url('gallery.png');
+}
+
+.folder-letter .icon-image {
+  background-image: url('letter.png');
+}
+
+ .spotify-container {
+    position: relative;
+    margin-top: 300px;
+    margin-bottom:100px;
+    margin-left: 400px;/* Set the container as a relative position */
+    width: 130%; /* Adjust the width as needed */
+/* Center the container horizontally */ 
+  }
+
+/* Media queries for mobile */
+
+@media (max-width: 600px) {
+  .topnav {
+    flex-wrap: wrap;
+  }
+
+  .topnav a {
+    flex: 1 0 50%; /* Display two links per row */
+    justify-content: center;
+    margin: 5px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .topnav a img {
+    display: none;
+  }
+}
+  </style>
+</head>
+ 
+<body>
+  <div class="border-image-container">
+    <div class="border-image left"></div>
+    <div class="border-image right"></div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="topnav">
+    <a href="index.html">
+      <img src="images/world.png" alt="Home Icon" width="24" height="24">
+      my_website
+    </a>
+  </div>
+
+  <h1 class="text_shadows">Aliya Koishina</h1>
+
+  <!-- Main content with icons -->
+  <div class="folder-container">
+    <a href="projects.html" class="folder-icon folder-projects">
+      <div class="icon-image"></div>
+      <span>Projects</span>
+    </a>
+
+    <a href="aboutme.html" class="folder-icon folder-aboutme">
+      <div class="icon-image"></div>
+      <span>About Me</span>
+    </a>
+
+    <a href="gallery.html" class="folder-icon folder-gallery">
+      <div class="icon-image"></div>
+      <span>Gallery</span>
+    </a>
+
+    <a href="contact.html" class="folder-icon folder-letter">
+      <div class="icon-image"></div>
+      <span>Contact me</span>
+    </a>
+  </div>
+
+  <div class="box-container">
+    <p>
+      <strong>
+      </strong><br>
+      hello, world! 
+      welcome to my website!<br>
+      i am a student at NYU Abu Dhabi.<br>
+      click on any icon 
+      and
+      enjoy my playlist :)<br>
+    </p>
+  </div>
+
+
+  <!-- Spotify playlist -->
+  <div class="spotify-container">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2Z0E6V6s6zvBGj8TYxoli5?utm_source=generator" width="35%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+ <script src="portfolio.js"></script>
+</body>
+</html>

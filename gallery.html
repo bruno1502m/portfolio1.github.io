@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <title>my_website</title>
+
+  <link rel="stylesheet" href="main.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <style>
+    .topnav a {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      height: 70px;
+      text-decoration: none;
+    }
+    
+    .topnav a img {
+      margin-right: 5px;
+    }
+
+    .carousel {
+  position: relative;
+  margin-right: 10%;
+
+  margin-left: 10%;
+  width: 80%;
+  margin-bottom: 50px;
+  box-shadow: none;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-indicators li.active {
+  background-color: white;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height:50%;
+}
+
+.carousel-inner .item {
+  display: none;
+  position: relative;
+ 
+
+}
+
+.carousel-inner .item.active {
+  display: block;
+}
+
+.carousel-inner .item img {
+  display: block;
+  width: 100%;
+  height: 40%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #FFD93B;
+}
+
+.carousel-caption h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.carousel-control:hover {
+  opacity: 1;
+  box-shadow: none;
+}
+
+.carousel-control.left {
+  left: 0.5%;
+}
+
+.carousel-control.right {
+  right: 0.5%;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+
+  box-shadow: none;
+}
+
+.carousel-control .glyphicon-chevron-left {
+  left: 0;
+}
+
+.carousel-control .glyphicon-chevron-right {
+  right: 0;
+}
+
+
+  </style>
+</head>
+ 
+<body>
+  <div class="border-image-container">
+    <div class="border-image left"></div>
+    <div class="border-image right"></div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="topnav">
+    <a href="index.html">
+      <img src="images/world.png" alt="Home Icon" width="24" height="24"> my_website
+    </a>
+
+    <a id="aboutme-link" href="#aboutme">>     gallery</a>
+    <a href="#news"></a>
+    <a href="#contact"></a>
+    <a href="#about"></a>
+  </div>
+
+<h2 class="gallery title" style="color: #CA0001; font-size: 34px; text-align: center;">i love travelling and taking pictures of different places</h2>
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+  </ol>
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/hudson.jpg" alt="Chania">
+      <div class="carousel-caption">
+        <h3>West Village, Hudson River, NYC</h3>
+        <p>Aug 2022</p>
+      </div>
+    </div>
+
+     <div class="item">
+      <img src="images/empire.jpg" alt="Empire">
+      <div class="carousel-caption">
+        <h3>NYC</h3>
+        <p>November 2022</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/wtc.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        <h3> World Trade Center, NYC</h3>
+        <p>Sep 2022</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/wash.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>Washington Square, NYC</h3>
+        <p>Dec 2022</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/london.jpg" alt="London">
+      <div class="carousel-caption">
+        <h3>London</h3>
+        <p>June 2022</p>
+      </div>
+    </div>
+
+
+<div class="item">
+      <img src="images/seven.jpg" alt="Seven Sisters">
+      <div class="carousel-caption">
+        <h3>Seven Sisters Cliff, England</h3>
+        <p>June 2022</p>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="images/istanbul.jpg" alt="Istanbul">
+      <div class="carousel-caption">
+        <h3>Istanbul</h3>
+        <p>March 2022</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/expo.jpg" alt="Expo">
+      <div class="carousel-caption">
+        <h3>Expo 2020, Dubai</h3>
+        <p>October 2021</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
